@@ -1,0 +1,11 @@
+<div class="container-fluid">
+<div class="row">
+<div class="col-md-3" style="font-weight: bold;font-size: 30px;">Title</div>
+<div class="col-md-3" style="font-weight: bold;font-size: 30px;">Image</div>
+<div class="col-md-3" style="font-weight: bold;font-size: 30px;">Description</div>
+<div class="col-md-3" style="font-weight: bold;font-size: 30px;">Author</div>
+</div>
+</div>
+<div *ngFor="let item of data">
+<app-favourite [completeData]=item></app-favourite>
+</div>

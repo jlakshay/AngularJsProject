@@ -1,0 +1,16 @@
+<div class="container-fluid">
+	<div class="row">
+	
+		<div class="col-md-3" >{{completeData.title}}</div>
+		<div class="col-md-3"><img src="{{completeData.urlToImage}}" width="50%" height="100px" alt="" /></div>
+		<div class="col-md-3">{{completeData.description}}</div>
+		<div class="col-md-3">{{completeData.author}}</div>
+	</div>
+</div>
+<div class="container">
+<div class="row">
+<button type="button" class="btn btn-danger" (click)=deleteFunction(completeData._id)>Delete</button>&nbsp;
+<button type="button" class="btn btn-danger" (click)=updateFunction(completeData)>Update</button>
+</div>
+</div>
+<app-update-module *ngIf="updatedData" [inputNews]="updatedData"></app-update-module>
